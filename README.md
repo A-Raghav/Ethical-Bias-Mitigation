@@ -1,4 +1,20 @@
 # Ethical-Bias-Mitigation
+A Python toolkit for detecting and mitigating ethical bias in machine learning models. This project provides wrapper classes around IBM's AI Fairness 360 (AIF360) library to make bias detection and mitigation more accessible and easier to implement in machine learning pipelines.
+
+### About
+This repository contains tools to help data scientists identify and mitigate ethical bias in machine learning models. Machine learning systems can inadvertently perpetuate or amplify societal biases present in training data, leading to unfair outcomes for certain demographic groups.
+
+### Key features:
+
+* Detect bias against unprivileged groups in structured datasets
+* Support for preprocessing and postprocessing bias mitigation strategies
+* Visualization tools to compare bias metrics before and after mitigation
+* Implementation of techniques like Reweighing, Reject Option Classification, and Disparate Impact Remover
+* Example notebooks demonstrating bias detection and mitigation on real-world datasets
+* Built as a practical wrapper around IBM's AIF360 library, this project simplifies the process of ensuring fairness in ML models when working with sensitive attributes like race, gender, or nationality.
+
+___ 
+
 #### **Why ethical bias mitigation is important?**
 
 Discrimination and bias in machine learning models is an area of hot debate.
