@@ -1,3 +1,37 @@
+# FairAI
+FairAI is a wrapper around the open source AI-Fairness-360 library (by IBM), that makes it easier to implement detection and mitigation of bias in ML models throughout the lifecycle of an project in both dev and prod settings.
+
+FairAI -
+1. Checks for bias in input data and predictions of ML models
+2. Mitigates the bias in ML model's predictions
+
+The tutorial notebooks in [fairai.notebooks.examples](https://gitlab.innovaccer.com/aseem.raghav/bias-fairness-framework/-/tree/master/notebooks/examples) provide a demonstration on how one can easily integrate a bias mitigation mechanism in their ML project. 
+
+To utilise the full power and customisability of bias-fairness framework, users are advised to also refer to the [AIF-360 library by IBM](https://github.com/Trusted-AI/AIF360).
+
+---
+
+## Supported bias mitigation algorithms
+* Reweighing ([Kamiran and Calders, 2012](http://doi.org/10.1007/s10115-011-0463-8))
+* Reject Option Classification ([Kamiran et al., 2012](https://doi.org/10.1109/ICDM.2012.45))
+* Equalized Odds Postprocessing ([Hardt et al., 2016](https://papers.nips.cc/paper/6374-equality-of-opportunity-in-supervised-learning))
+* Calibrated Equalized Odds Postprocessing ([Pleiss et al., 2017](https://papers.nips.cc/paper/7151-on-fairness-and-calibration))
+
+---
+
+## Installing FairAI from Git
+```pip install git+https://gitlab.innovaccer.com/aseem.raghav/bias-fairness-framework.git```
+
+## Installing FairAI manually
+Clone the latest version of this repository -
+
+```git clone https://gitlab.innovaccer.com/aseem.raghav/bias-fairness-framework.git```
+
+Navigate to the root directory of the project and run -
+
+```pip install .```
+
+
 # Ethical-Bias-Mitigation
 A Python toolkit for detecting and mitigating ethical bias in machine learning models. This project provides wrapper classes around IBM's AI Fairness 360 (AIF360) library to make bias detection and mitigation more accessible and easier to implement in machine learning pipelines.
 
